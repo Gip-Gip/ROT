@@ -42,10 +42,11 @@ The code format ROT is programmed in is as follows:
 
  * 8-space tabs for indents
  * C89 (no // comments!)
- * when defining functions that have no arguments there is always void  
- in the parentheses
- * The encoding is in ASCII(aka US-ASCII and ANSI). This is basically
- UTF-8 - the  last 128 characters
+ * when defining functions that have no arguments there is always void  in the  
+ parentheses
+ * The encoding is in ASCII(aka US-ASCII and ANSI). This is basically UTF-8 -  
+ the  last 128 characters
+ * No single line must exceed 80 characters in length!
 
 #Testing Environments
 
