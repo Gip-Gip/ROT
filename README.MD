@@ -3,7 +3,7 @@
 The Roll Of Tape OS(ROT for short) is an in-development OS that's intentions  
 are to be flexible, well documented, and contained within one file. This is  
 my first attempt at an OS and is guaranteed to be sloppy and basic, but thus is  
-why I have put it to GitHub (so it can be improved)!  
+why I have put it on GitHub (so it can be improved)!  
 
 #The Idea  
 ROT got it's name from the fact that it is entirely contained in one file. The  
@@ -46,3 +46,8 @@ The code format ROT is programmed in is as follows:
 	in the parentheses
 	* The encoding is in ASCII(aka US-ASCII and ANSI). This is basically
 	UTF-8 - the  last 128 characters
+
+#Testing Environments
+
+	* The hosted (EXE) version is compiled with GCC and tested on Linux
+	* The x86 version is compiled with Turbo C and tested on DOS 3.1
