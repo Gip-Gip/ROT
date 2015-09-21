@@ -1,4 +1,7 @@
-/* THIS SOURCE FILE'S TABS ARE 8 SPACES IN LENGTH!
+char rotEdition[] = "ROT testing 1.2.2015 \"Talking Potato\"\n"; /* The version
+format for ROT is release.successful build.year
+
+THIS SOURCE FILE'S TABS ARE 8 SPACES IN LENGTH!
 
 The Public File License
 
@@ -29,11 +32,7 @@ different sections within this file to mark what is what.
 				   SECTIONS
 				  ==========
 
-CONFIGURATION - Where people can configure what parts of the code are actually
-used by commenting (adding a /* to the start of the line) or uncommenting
-(removing the /* at the start of the line) an option you will be using.
-**NOTE** that most options are not compatible with each other. It will usually
-tell you if you need to comment out another option to get this one to work.
+ARCHITECTURE CONFIGURATION - The architecture ROT will be built for
 
 DATA TYPES - A bunch of definitions that tell ROT how to handle data and other
 things
@@ -44,10 +43,10 @@ HOST CODE - Code used if the "HOSTED" option is uncommented
 
 ROT CORE - The heart of ROT
 
-*/
+ */
 
 /* ////////////////////////////////////////////////////////////////////////////
-CONFIGURATION==================================================================
+ARCHITECTURE CONFIGURATION=====================================================
 //////////////////////////////////////////////////////////////////////////// */
 
 #define HOSTED 1 /* Compile the source as an executable that you can run */
@@ -61,7 +60,19 @@ DATA TYPES=====================================================================
 
 #define MAINTYPE int /* The type that main returns */
 #define GENINT int /* General interger */
-#define RAMINT long unsigned int /* RAM interger, for storing addresses */
+#define RAMINT long unsigned int /* RAM integer, for storing addresses */
+
+#ifndef bool
+#define bool char
+#endif
+
+#ifndef true
+#define true 0
+#endif
+
+#ifndef false
+#define false 1
+#endif
 
 /* ////////////////////////////////////////////////////////////////////////////
 GLOBAL VARIABLES===============================================================
@@ -75,6 +86,32 @@ HOST CODE======================================================================
 //////////////////////////////////////////////////////////////////////////// */
 
 #ifdef HOSTED
+#include <stdio.h>
+#include <stdlib.h>
+
+void print(void *__str__, char __mod__)
+{
+	if(__mod__ == 's')
+	{
+		printf("%s", __str__);
+	}
+	else if(__mod__ == 'c')
+	{
+		char *__out__ = __str__;
+		printf("%c", *(__out__));
+	}
+	else if(__mod__ == 'd')
+	{
+		int *__out__ = __str__;
+		printf("%d", *(__out__));
+	}
+}
+
+bool detectHardware()
+{
+	return true;
+}
+
 #endif
 
 /* ////////////////////////////////////////////////////////////////////////////
@@ -91,6 +128,11 @@ void limbo( void )
 
 MAINTYPE main( void )
 {
+	if(detectHardware() == false)
+	{
+		limbo(); /* If there is no I/O hardware, go to limbo... */
+	}
+	print(rotEdition, 's');
 	#ifdef HOSTED /* If the hosted option is uncommented, let's return */
 	return 0;
 	#else /* But if not, time to enter limbo! */
