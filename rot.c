@@ -3,7 +3,7 @@ format for ROT is release.successful build.year
 
 THIS SOURCE FILE'S TABS ARE 8 SPACES IN LENGTH!
 
-The Public File License
+The Public File License (see https://github.com/Gip-Gip/PFL for info)
 
 Copyright Charles "Gip-Gip" Thompson, September 20th, 2015
 
@@ -40,6 +40,8 @@ things
 GLOBAL VARIABLES - Variables that are used no matter what
 
 HOST CODE - Code used if the "HOSTED" option is uncommented
+
+x86 CODE - Code used if the "x86"
 
 ROT CORE - The heart of ROT
 
