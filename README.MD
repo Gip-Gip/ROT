@@ -20,34 +20,34 @@ unbelievably flexible, to the point that if it has a console, ROT will run on it
 
 #The Current Features
 
-	* It supports running as an EXE
-	* It can print the startup string
+ * It supports running as an EXE
+ * It can print the startup string
 
 #The Soon To Come Features
 
-	* x86 support
-	* can print the startup string on x86 machines
+ * x86 support
+ * can print the startup string on x86 machines
 
 #Future Goals
 
-	* Hosted keyboard input
-	* x86 keyboard input
-	* Hosted disk i/o
-	* x86 disk i/o
-	* simple interpreted EXE format
+ * Hosted keyboard input
+ * x86 keyboard input
+ * Hosted disk i/o
+ * x86 disk i/o
+ * simple interpreted EXE format
 
 #Code Format
 
 The code format ROT is programmed in is as follows:
 
-	* 8-space tabs for indents
-	* C89 (no // comments!)
-	* when defining functions that have no arguments there is always void  
-	in the parentheses
-	* The encoding is in ASCII(aka US-ASCII and ANSI). This is basically
-	UTF-8 - the  last 128 characters
+ * 8-space tabs for indents
+ * C89 (no // comments!)
+ * when defining functions that have no arguments there is always void  
+ in the parentheses
+ * The encoding is in ASCII(aka US-ASCII and ANSI). This is basically
+ UTF-8 - the  last 128 characters
 
 #Testing Environments
 
-	* The hosted (EXE) version is compiled with GCC and tested on Linux
-	* The x86 version is compiled with Turbo C and tested on DOS 3.1
+ * The hosted (EXE) version is compiled with GCC and tested on Linux
+ * The x86 version is compiled with Turbo C and tested on DOS 3.1
