@@ -1,3 +1,5 @@
+DEVELOPMENT IS HALTED UNTIL LASM IS USABLE
+
 #The Roll Of Tape OS
 
 The Roll Of Tape OS(ROT for short) is an in-development OS that's intentions  
