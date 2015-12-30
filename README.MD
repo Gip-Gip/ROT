@@ -11,9 +11,9 @@ reason for this is mostly due to the license it is under, but I also (for some
 reason) believe that it is easier to organize (because linkers are sooo
 complicated :P). Luckily for me us there are #ifdef markers to help build
 different things by just commenting and uncommenting stuff.. yea.. I'm not
-organized at all.
+organized at all.~~
 
-What I'm aiming for when I finish the basic goals and hurtles of developing ROT
+~~What I'm aiming for when I finish the basic goals and hurtles of developing ROT
 is a CP/M inspired OS (interpreted EXEs, multitasking, console based) that is
 unbelievably flexible, to the point that if it has a console, ROT will run on it
 (I can have dreams, OK).~~
