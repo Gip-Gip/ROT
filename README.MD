@@ -23,4 +23,4 @@ in assembler that comply to the same things.
 
 #Testing Environments
 
- * The TI-99 version is tested on Classic99
+ * The TI-99 version is tested on Win994a
