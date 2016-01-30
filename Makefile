@@ -3,8 +3,8 @@ ccargs=-c -ffreestanding -O2 -Wall -Wextra
 ld=gcc
 ldargs=-shared -ffreestanding -O2 -nostdlib
 
-all-x86:	ind/rot_main.c \
-			ind/rot_log.c \
+all-x86:    ind/rot_main.c \
+            ind/rot_log.c \
 			x86/rot_linkscript.ld \
 			x86/rot_bootstrap.asm \
 			x86/rot_videoManager.c \
