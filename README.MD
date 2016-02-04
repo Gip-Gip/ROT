@@ -4,7 +4,7 @@ Welcome to the Roll Of Tape OS(ROT for short)! The name came from the fact that 
 
 # CURRENT FEATURES:
 
- * Simple screen clearing and printing
+ * Simple screen output
  * Monochrome and colour text detection
 
 # FEATURES THAT WILL COME:
