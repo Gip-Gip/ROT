@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include "rot_video.h"
 
-#define LOGID "rot_videoControl"
+#define LOGID "rot_videoControl(2.2016)"
 
 #define MONOTERMFND "Monochrome terminal found!"
 #define COLRTERMFND "Colour terminal found!"
